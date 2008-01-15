@@ -1,15 +1,16 @@
 %include	/usr/lib/rpm/macros.java
 Summary:	Test Java code using mock objects
+Summary(pl.UTF-8):	Testowanie kodu w Javie z użyciem obiektów pozornych (mock objects)
 Name:		jmock
 Version:	1.0.1
 Release:	0.1
 Epoch:		0
 License:	Open Source
 Group:		Development/Languages/Java
-URL:		http://jmock.codehaus.org/
-Source0:	http://mirrors.ibiblio.org/pub/mirrors/maven2/jmock/jmock/1.0.1/%{name}-%{version}-sources.jar
+Source0:	http://mirrors.ibiblio.org/pub/mirrors/maven2/jmock/jmock/%{version}/%{name}-%{version}-sources.jar
 # Source0-md5:	b845738bd6cb63f9e21e8b11f629382f
 Patch0:		%{name}-MethodFactory.patch
+URL:		http://jmock.codehaus.org/
 BuildRequires:	ant >= 0:1.6
 BuildRequires:	ant-junit >= 0:1.6
 BuildRequires:	asm >= 0:1.5.3
@@ -33,23 +34,38 @@ in your programs. The jMock package:
   reducing the brittleness of your tests.
 - is easy to extend.
 
-%package  javadoc
-Summary:	Javadoc for %{name}
+%description -l pl.UTF-8
+jMock to biblioteka do testowania kodu w Javie przy użyciu obiektów
+pozornych (mock objects). Pomagają one przy projektowaniu i testowaniu
+interakcji między obiektami w programach. Pakiet jMock:
+- przyspiesza i ułatwia definiowanie obiektów pozornych, dzięki czemu
+  nie zaburza się rytmu programowania,
+- pozwala definiować elastyczne ograniczenia dla interakcji obiektów,
+  zmniejszając słabość testów,
+- jest łatwy w rozszerzaniu.
+
+%package javadoc
+Summary:	Javadoc for jMock
+Summary(pl.UTF-8):	Dokumentacja do pakietu jMock
 Group:		Documentation
 Requires:	jpackage-utils
 
-%description    javadoc
-Documentation for %{name}.
+%description javadoc
+Documentation for jMock.
+
+%description javadoc -l pl.UTF-8
+Dokumentacja do pakietu jMock.
 
 %package demo
-Summary:	Examples for %{name}
+Summary:	Examples for jMock
+Summary(pl.uTF-8):	Przykłady użycia pakietu jMock
 Group:		Documentation
 
 %description demo
-Demonstrations and samples for %{name}.
+Demonstrations and samples for jMock.
 
 %description demo -l pl.UTF-8
-Pliki demonstracyjne i przykłady dla pakietu %{name}.
+Pliki demonstracyjne i przykłady dla pakietu jMock.
 
 %prep
 %setup -qc
