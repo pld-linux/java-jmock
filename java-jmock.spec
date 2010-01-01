@@ -58,7 +58,7 @@ Dokumentacja do pakietu jMock.
 
 %package demo
 Summary:	Examples for jMock
-Summary(pl.uTF-8):	Przykłady użycia pakietu jMock
+Summary(pl.UTF-8):	Przykłady użycia pakietu jMock
 Group:		Documentation
 
 %description demo
