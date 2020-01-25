@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	Test Java code using mock objects
 Summary(pl.UTF-8):	Testowanie kodu w Javie z użyciem obiektów pozornych (mock objects)
 Name:		jmock
