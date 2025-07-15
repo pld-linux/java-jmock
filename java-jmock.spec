@@ -69,7 +69,7 @@ Pliki demonstracyjne i przykłady dla pakietu jMock.
 %prep
 %setup -qc
 find -name '*.jar' | xargs rm -vf
-#%patch0
+#%%patch0
 
 %build
 export OPT_JAR_LIST="ant/ant-junit junit"
